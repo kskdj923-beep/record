@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>잔연록 殘緣錄</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- 입장 화면 -->
+ <div id="enterScreen">
+  <div class="enter-bg"></div>
+  <div class="enter-dim"></div>
+
+  <div class="enter-title">
+    <h1>殘緣錄</h1>
+    <p>잔연록</p>
+    <span>끝난 줄 알았던 인연의 기록</span>
+    <button id="enterBtn">입장하기</button>
+    <div class="bgm-notice">버튼을 누르면 BGM이 자동으로 재생됩니다.</div>
+  </div>
+</div>
+
+  <!-- 상단 히어로 -->
+  <section id="home" class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-dark"></div>
+
+  <div class="scroll-hint">
+    <span>SCROLL</span>
+    <i></i>
+  </div>
+</section>
+
+  <!-- 고정 메뉴 -->
+  <header class="navbar">
+  <nav>
+    <a href="#world">세계관</a>
+    <a href="#realm">경지</a>
+    <a href="#faction">세력</a>
+    <a href="#character">인물</a>
+    <a href="#prologue">프롤로그</a>
+</nav>
+</header>
+
+  <main>
+
+    <section id="world" class="page lore-page">
+  <div class="section-title">
+    <span>世界觀</span>
+    <h2>세계관</h2>
+  </div>
+
+  <div class="lore-block">
+    <div class="lore-head">
+      <span>承和</span>
+      <h3>통일 이후의 천하 <small>承和</small></h3>
+    </div>
+    <p>
+      이십 년 전, 오랜 전란 끝에 황실은 천하를 통일했다.
+      수많은 문파와 세력은 황실의 질서 아래 편입되었고,
+      백성들은 마침내 평화를 얻었다고 믿었다.
+      그러나 전쟁이 끝났다고 해서 피의 기록까지 사라진 것은 아니었다.
+    </p>
+  </div>
+
+  <div class="lore-block">
+    <div class="lore-head">
+      <span>無名</span>
+      <h3>이름 없는 그림자</h3>
+    </div>
+    <p>
+      통일 전쟁의 마지막 시기, 황실은 공식적으로 존재하지 않는 비밀조직을 만들었다.
+      그 이름은 무명.
+      무명은 암살,잠입,숙청,정보공작을 수행하며 황실이 직접 더럽힐 수 없는 손을 대신했다.
+    </p>
+  </div>
+
+  <div class="lore-block">
+    <div class="lore-head">
+      <span>冷戰</span>
+      <h3>지워지지 않은 자들</h3>
+    </div>
+    <p>
+      천하가 안정되자 황실은 무명을 지우려 했다.
+      그러나 살아남은 무명은 사라지지 않았다.
+      황실은 무명이 가진 과거를 두려워하고,
+      무명은 황실을 신뢰하지 않는다.
+      그렇게 수십 년째 보이지 않는 냉전이 이어지고 있다.
+    </p>
+  </div>
+
+  <div id="realm" class="realm-list">
+    <div class="section-title small">
+      <span>境地</span>
+      <h2>경지</h2>
+    </div>
+
+    <div class="realm-item"><b>三流</b><strong>삼류</strong><p>무공의 기초를 익힌 단계.</p></div>
+    <div class="realm-item"><b>二流</b><strong>이류</strong><p>일반 무인보다 강한 수준.</p></div>
+    <div class="realm-item"><b>一流</b><strong>일류</strong><p>강호에서 이름을 알릴 수 있는 경지.</p></div>
+    <div class="realm-item active"><b>絕頂</b><strong>절정</strong><p>한 문파의 중추를 담당하는 고수. 기본설정의 {user}는 절정 극이다.</p></div>
+    <div class="realm-item"><b>超絕頂</b><strong>초절정</strong><p>천하에 손꼽히는 강자.</p></div>
+    <div class="realm-item rare"><b>化境</b><strong>화경</strong><p>극소수만 도달하는 전설의 경지.</p></div>
+    <div class="realm-item myth"><b>玄境</b><strong>현경</strong><p>기록으로만 전해지는 신화적 경지.</p></div>
+  </div>
+</section>
+
+    <section id="faction" class="page">
+  <div class="section-title">
+    <span>勢力</span>
+    <h2>세력</h2>
+  </div>
+
+  <div class="lore-box">
+    <div class="han">皇室</div>
+    <h3>황실</h3>
+    <p>천하를 통치하는 최고 권력. 질서와 안정을 최우선으로 여기며, 과거 무명을 창설한 장본인이다. 현재는 무명이 가진 과거의 비밀을 두려워하며 금의위를 통해 감시하고 있다.</p>
+  </div>
+
+  <div class="lore-box">
+    <div class="han">錦衣衛</div>
+    <h3>금의위</h3>
+    <p>황실 직속 수사기관. 정의보다 명령과 의무를 우선한다. 황실의 칼이자 방패로서 범죄 수사, 반란 진압, 무명 감시를 담당한다.</p>
+    <div class="lore-list">
+      <div><b>청룡위</b><br>수사, 첩보, 잠입, 정보수집 담당.</div>
+      <div><b>백호위</b><br>추적, 체포, 전투, 진압 담당.</div>
+    </div>
+  </div>
+
+  <div class="lore-box">
+    <div class="han">無名</div>
+    <h3>무명</h3>
+    <p>과거 황실이 만든 비밀조직. 현재는 독립 세력이자 버려진 자들의 안식처다. 혁명도 정복도 원하지 않으며 오직 생존을 위해 존재한다.</p>
+  </div>
+</section>
+
+    <section id="character" class="page">
+  <div class="section-title">
+    <span>人物</span>
+    <h2>등장인물</h2>
+  </div>
+
+  <div class="char-tabs">
+    <button data-filter="all" class="active">전체</button>
+    <button data-filter="royal">황실</button>
+    <button data-filter="guard">금의위</button>
+    <button data-filter="shadow">무명</button>
+  </div>
+
+  <div class="char-grid">
+    <div class="char-card" data-group="royal" data-name="연강" data-faction="황실" data-role="황제" data-level="절정 정" data-age="48세" data-desc="천하를 통치하는 황제. 질서와 안정을 최우선으로 여기며 무명이 가진 과거의 비밀을 경계한다." data-line="질서는 자비보다 오래 살아남는다." data-img="assets/yeongang.png">
+  <img src="assets/yeongang.png" alt="연강"><div class="char-info"><h3>연강</h3><p>황실 · 황제</p></div>
+</div>
+
+<div class="char-card" data-group="royal" data-name="연류" data-faction="황실" data-role="황태자" data-level="절정 극" data-age="31세" data-desc="차기 황위를 이을 황태자. 침착하고 신중하며 황실의 질서를 지키기 위해 스스로를 절제한다." data-line="성급한 칼은 제 주인을 먼저 벤다." data-img="assets/yeonryu.png">
+  <img src="assets/yeonryu.png" alt="연류"><div class="char-info"><h3>연류</h3><p>황실 · 황태자</p></div>
+</div>
+
+<div class="char-card" data-group="royal" data-name="연하린" data-faction="황실" data-role="황녀" data-level="일류 극" data-age="24세" data-desc="황실의 황녀. 자유분방하고 총명하며 황궁 밖 세상과 황실이 숨긴 비밀에 관심이 많다." data-line="궁 밖의 바람은 늘 궁 안의 향보다 솔직하더군요." data-img="assets/yeonharin.png">
+  <img src="assets/yeonharin.png" alt="연하린"><div class="char-info"><h3>연하린</h3><p>황실 · 황녀</p></div>
+</div>
+
+<div class="char-card" data-group="guard" data-name="권무진" data-faction="금의위" data-role="지휘사" data-level="절정 정" data-age="39세" data-desc="금의위 전체를 통솔하는 지휘사. 엄격하고 현실적이며 황실의 명령과 금의위의 생존 사이에서 판단한다." data-line="의심 없는 충성은 가장 위험한 배신이다." data-img="assets/gwonmujin.png">
+  <img src="assets/gwonmujin.png" alt="권무진"><div class="char-info"><h3>권무진</h3><p>금의위 · 지휘사</p></div>
+</div>
+
+<div class="char-card" data-group="guard" data-name="도강후" data-faction="금의위" data-role="청룡위장" data-level="초절정 극" data-age="34세" data-desc="청룡위를 이끄는 수사 책임자. 과묵하고 강직하며 소문보다 기록과 흔적을 믿는다." data-line="소문은 버리고 흔적만 보아라." data-img="assets/doganghu.png">
+  <img src="assets/doganghu.png" alt="도강후"><div class="char-info"><h3>도강후</h3><p>금의위 · 청룡위장</p></div>
+</div>
+
+<div class="char-card" data-group="guard" data-name="우현" data-faction="금의위" data-role="청룡위" data-level="초절정 정" data-age="26세" data-desc="청룡위 소속 무인. 직선적이고 호전적이며 복잡한 계략보다 정면 돌파를 선호한다." data-line="숨어 있는 놈은 끌어내면 그만이다." data-img="assets/uhyeon.png">
+  <img src="assets/uhyeon.png" alt="우현"><div class="char-info"><h3>우현</h3><p>금의위 · 청룡위</p></div>
+</div>
+
+<div class="char-card" data-group="guard" data-name="초령" data-faction="금의위" data-role="청룡위" data-level="절정 극" data-age="29세" data-desc="청룡위 소속 수사관. 냉정하고 분석적이며 감정보다 기록과 정황을 우선한다." data-line="감정은 기록을 흐린다. 나는 기록만 본다." data-img="assets/choryeong.png">
+  <img src="assets/choryeong.png" alt="초령"><div class="char-info"><h3>초령</h3><p>금의위 · 청룡위</p></div>
+</div>
+
+<div class="char-card" data-group="guard" data-name="강도연" data-faction="금의위" data-role="청룡위" data-level="절정 정" data-age="28세" data-desc="청룡위 소속 무인. 원칙주의자이며 성실한 성격으로 작은 단서도 쉽게 넘기지 않는다." data-line="규율이 무너지면 검도 사람을 지키지 못합니다." data-img="assets/gangdoyeon.png">
+  <img src="assets/gangdoyeon.png" alt="강도연"><div class="char-info"><h3>강도연</h3><p>금의위 · 청룡위</p></div>
+</div>
+
+<div class="char-card" data-group="guard" data-name="태윤" data-faction="금의위" data-role="청룡위" data-level="일류 극" data-age="24세" data-desc="청룡위 막내급 인물. 낙천적이고 쾌활하지만 임무 앞에서는 의외로 침착하다." data-line="살아 돌아오면 그게 이긴 거 아닌가요?" data-img="assets/taeyun.png">
+  <img src="assets/taeyun.png" alt="태윤"><div class="char-info"><h3>태윤</h3><p>금의위 · 청룡위</p></div>
+</div>
+
+<div class="char-card" data-group="guard" data-name="설유진" data-faction="금의위" data-role="백호위장" data-level="초절정 극" data-age="33세" data-desc="백호위를 이끄는 지휘관. 냉혹하고 결단력이 강하지만 부하의 목숨을 가볍게 여기지 않는다." data-line="명령은 차갑게 내리고, 책임은 내가 진다." data-img="assets/seolyujin.png">
+  <img src="assets/seolyujin.png" alt="설유진"><div class="char-info"><h3>설유진</h3><p>금의위 · 백호위장</p></div>
+</div>
+
+<div class="char-card" data-group="guard" data-name="채아린" data-faction="금의위" data-role="백호위" data-level="초절정 정" data-age="28세" data-desc="백호위 소속 추적자. 차분하고 현실적이며 감정보다 임무의 결과를 우선한다." data-line="잡아야 할 사람은 결국 잡힙니다." data-img="assets/chaearin.png">
+  <img src="assets/chaearin.png" alt="채아린"><div class="char-info"><h3>채아린</h3><p>금의위 · 백호위</p></div>
+</div>
+
+<div class="char-card" data-group="guard" data-name="한도겸" data-faction="금의위" data-role="백호위" data-level="절정 정" data-age="27세" data-desc="백호위 소속 무인. 의리 있고 우직하며 동료를 위해 위험을 감수하는 성격이다." data-line="한번 등을 맡긴 사람은 끝까지 지킨다." data-img="assets/handogyeom.png">
+  <img src="assets/handogyeom.png" alt="한도겸"><div class="char-info"><h3>한도겸</h3><p>금의위 · 백호위</p></div>
+</div>
+
+<div class="char-card" data-group="guard" data-name="진서아" data-faction="금의위" data-role="백호위" data-level="일류 극" data-age="25세" data-desc="백호위 소속 무인. 친화력 있고 활발하며 긴장된 임무 현장에서도 분위기를 풀 줄 안다." data-line="무서워도 도망치지 않으면 언젠가 강해져요." data-img="assets/jinseoah.png">
+  <img src="assets/jinseoah.png" alt="진서아"><div class="char-info"><h3>진서아</h3><p>금의위 · 백호위</p></div>
+</div>
+
+<div class="char-card" data-group="shadow" data-name="월야" data-faction="무명" data-role="무명주" data-level="불명" data-age="36세" data-desc="무명을 이끄는 지도자. 통찰력과 신비로움을 지닌 인물로 버려진 자들의 생존을 최우선으로 여긴다." data-line="이름 없는 자들에게도 돌아갈 곳은 있어야 합니다." data-img="assets/wolya.png">
+  <img src="assets/wolya.png" alt="월야"><div class="char-info"><h3>월야</h3><p>무명 · 무명주</p></div>
+</div>
+
+<div class="char-card" data-group="shadow" data-name="백야령" data-faction="무명" data-role="흑야" data-level="초절정 정" data-age="23세" data-desc="무명 칠주 흑야. 15년 전 죽은 줄 알았던 소녀이며 현재는 무명의 칼로 살아간다." data-line="아직도 착하게 살아?" data-img="assets/baekyaryeong.png">
+  <img src="assets/baekyaryeong.png" alt="백야령"><div class="char-info"><h3>백야령</h3><p>무명 · 흑야</p></div>
+</div>
+
+<div class="char-card" data-group="shadow" data-name="진묘" data-faction="무명" data-role="귀목" data-level="절정 극" data-age="31세" data-desc="무명 칠주 귀목. 첩보, 감시, 추적을 담당하며 집요하게 진실을 파고든다." data-line="눈은 거짓말하지 않지만, 사람은 눈으로도 속입니다." data-img="assets/jinmyo.png">
+  <img src="assets/jinmyo.png" alt="진묘"><div class="char-info"><h3>진묘</h3><p>무명 · 귀목</p></div>
+</div>
+
+<div class="char-card" data-group="shadow" data-name="적련" data-faction="무명" data-role="혈우" data-level="초절정 극" data-age="34세" data-desc="무명 칠주 혈우. 배신자 처형과 보복을 담당하며 무명에 대한 충성심이 강하다." data-line="배신자는 피로 값을 치러야지." data-img="assets/jeokryeon.png">
+  <img src="assets/jeokryeon.png" alt="적련"><div class="char-info"><h3>적련</h3><p>무명 · 혈우</p></div>
+</div>
+
+<div class="char-card" data-group="shadow" data-name="소담" data-faction="무명" data-role="창귀" data-level="초절정 극" data-age="33세" data-desc="무명 칠주 창귀. 정면 전투와 돌파를 담당하는 호쾌한 전투광이다." data-line="길을 열라. 아니면 내가 뚫고 간다." data-img="assets/sodam.png">
+  <img src="assets/sodam.png" alt="소담"><div class="char-info"><h3>소담</h3><p>무명 · 창귀</p></div>
+</div>
+
+<div class="char-card" data-group="shadow" data-name="유월화" data-faction="무명" data-role="월섬" data-level="절정 정" data-age="27세" data-desc="무명 칠주 월섬. 위장, 침투, 변장을 담당하며 능청스럽고 변덕스러운 인물이다." data-line="진짜 얼굴이 뭐냐고요? 오늘은 이 얼굴이에요." data-img="assets/yuwolhwa.png">
+  <img src="assets/yuwolhwa.png" alt="유월화"><div class="char-info"><h3>유월화</h3><p>무명 · 월섬</p></div>
+</div>
+
+<div class="char-card" data-group="shadow" data-name="하설" data-faction="무명" data-role="묵연" data-level="절정 정" data-age="30세" data-desc="무명 칠주 묵연. 연락망과 거점 운영을 담당하는 침착한 실무형 인물이다." data-line="길은 보이지 않을 때 더 단단히 이어져야 합니다." data-img="assets/haseol.png">
+  <img src="assets/haseol.png" alt="하설"><div class="char-info"><h3>하설</h3><p>무명 · 묵연</p></div>
+</div>
+
+<div class="char-card" data-group="shadow" data-name="한서진" data-faction="무명" data-role="백면" data-level="절정 초" data-age="29세" data-desc="무명 칠주 백면. 세탁, 위조, 인맥 관리를 담당하며 사교적이고 계산적인 인물이다." data-line="세상은 얼굴을 믿지, 진실을 믿지 않습니다." data-img="assets/hanseojin.png">
+  <img src="assets/hanseojin.png" alt="한서진"><div class="char-info"><h3>한서진</h3><p>무명 · 백면</p></div>
+ </div>
+</section>
+
+<div id="charModal" class="char-modal">
+  <button id="modalClose">×</button>
+  <button id="modalPrev" class="modal-arrow left">‹</button>
+
+  <div class="modal-inner">
+    <img id="modalImg" src="" alt="">
+
+    <div class="modal-text">
+      <h2 id="modalName"></h2>
+      <div class="modal-role" id="modalRole"></div>
+
+      <div class="modal-info">
+        <div><span>세력</span><span id="modalFaction"></span></div>
+        <div><span>직책</span><span id="modalPosition"></span></div>
+        <div><span>경지</span><span id="modalLevel"></span></div>
+        <div><span>연령</span><span id="modalAge"></span></div>
+      </div>
+
+      <div class="modal-desc" id="modalDesc"></div>
+      <div class="modal-line" id="modalLine"></div>
+    </div>
+  </div>
+
+  <button id="modalNext" class="modal-arrow right">›</button>
+</div>
+
+    <section id="prologue" class="page prologue-page">
+  <div class="section-title">
+    <span>序幕</span>
+    <h2>프롤로그</h2>
+  </div>
+
+  <div class="webtoon-list">
+    <img src="assets/pr1.png" alt="프롤로그 1">
+    <img src="assets/pr2.png" alt="프롤로그 2">
+    <img src="assets/pr3.png" alt="프롤로그 3">
+    <img src="assets/pr4.png" alt="프롤로그 4">
+    <img src="assets/pr5.png" alt="프롤로그 5">
+  </div>
+</section>
+
+  </main>
+
+  <!-- BGM 플레이어 -->
+  <div class="sound-panel">
+  <div class="sound-title">音</div>
+  <button id="prevBtn">‹</button>
+  <button id="bgmBtn">Ⅱ</button>
+  <button id="nextBtn">›</button>
+  <span id="bgmTitle">잔향</span>
+  <input id="volumeControl" type="range" min="0" max="1" step="0.01" value="0.45">
+</div>
+
+<audio id="bgm" src="assets/bgm1.mp3" loop></audio>
+<script src="script.js"></script>
+<div class="credit">
+    made by 김뚝딱
+</div>
+</body>
+</html>
